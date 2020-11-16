@@ -1,0 +1,19 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/calebkleveter\/Development\/Skelpo\/OHHTTPStubs\/.build\/x86_64-apple-macosx\/debug\/OHHTTPStubsPackageTests.xctest\/Contents\/MacOS\/OHHTTPStubsPackageTests",
+      "packageName" : "OHHTTPStubs",
+      "productName" : "OHHTTPStubsPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.OHHTTPStubs-debug.module" : "OHHTTPStubs",
+    "C.OHHTTPStubsSwiftTests-debug.module" : "OHHTTPStubsSwiftTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

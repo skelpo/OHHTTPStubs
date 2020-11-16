@@ -1,0 +1,5 @@
+module OHHTTPStubsObjC {
+    umbrella header "../OHHTTPStubsObjC.h"
+    link "OHHTTPStubsObjC"
+    export *
+}

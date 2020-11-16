@@ -26,6 +26,11 @@
  * Swift Helpers
  */
 
+@_exported import OHHTTPStubsObjC
+
+#if SWIFT_PACKAGE
+import Foundation
+#endif
 
 #if !swift(>=3.0)
   extension OHHTTPStubs {

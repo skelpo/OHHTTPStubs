@@ -1,0 +1,4 @@
+module OHHTTPStubs {
+    header "/Users/calebkleveter/Development/Skelpo/OHHTTPStubs/.build/x86_64-apple-macosx/debug/OHHTTPStubs.build/OHHTTPStubs-Swift.h"
+    requires objc
+}

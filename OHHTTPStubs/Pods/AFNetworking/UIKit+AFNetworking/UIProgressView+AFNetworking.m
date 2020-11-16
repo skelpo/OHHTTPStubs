@@ -25,7 +25,11 @@
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
+#if SWIFT_PACKAGE
+#import "../AFNetworking/AFURLSessionManager.h"
+#else
 #import "AFURLSessionManager.h"
+#endif
 
 static void * AFTaskCountOfBytesSentContext = &AFTaskCountOfBytesSentContext;
 static void * AFTaskCountOfBytesReceivedContext = &AFTaskCountOfBytesReceivedContext;

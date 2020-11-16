@@ -22,7 +22,12 @@
 #import "AFNetworkActivityIndicatorManager.h"
 
 #if TARGET_OS_IOS
+
+#if SWIFT_PACKAGE
+#import "../AFNetworking/AFURLSessionManager.h"
+#else
 #import "AFURLSessionManager.h"
+#endif
 
 typedef NS_ENUM(NSInteger, AFNetworkActivityManagerState) {
     AFNetworkActivityManagerStateNotActive,

@@ -24,8 +24,15 @@
 #if TARGET_OS_IOS || TARGET_OS_TV 
 
 #import <Foundation/Foundation.h>
+
+#if SWIFT_PACKAGE
+#import "../AFNetworking/AFURLSessionManager.h"
+#import "../AFNetworking/AFHTTPSessionManager.h"
+#else
+#import "AFURLSessionManager.h"
+#endif
+
 #import "AFAutoPurgingImageCache.h"
-#import "AFHTTPSessionManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

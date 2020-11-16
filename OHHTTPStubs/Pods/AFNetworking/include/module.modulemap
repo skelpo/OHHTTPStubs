@@ -1,0 +1,5 @@
+module AFNetworking {
+    umbrella header "../AFNetworking-Umbrella.h"
+    link "AFNetworking"
+    export *
+}

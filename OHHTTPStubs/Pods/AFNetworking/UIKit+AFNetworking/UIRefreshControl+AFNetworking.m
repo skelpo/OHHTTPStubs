@@ -25,7 +25,11 @@
 
 #if TARGET_OS_IOS
 
+#if SWIFT_PACKAGE
+#import "../AFNetworking/AFURLSessionManager.h"
+#else
 #import "AFURLSessionManager.h"
+#endif
 
 @interface AFRefreshControlNotificationObserver : NSObject
 @property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
@@ -54,11 +58,17 @@
 
 @implementation AFRefreshControlNotificationObserver
 
+#if SWIFT_PACKAGE
+@synthesize refreshControl;
+#endif
+
 - (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl
 {
     self = [super init];
     if (self) {
+        #if !SWIFT_PACKAGE
         _refreshControl = refreshControl;
+        #endif
     }
     return self;
 }
